@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 4 - Formularios</title>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Información de la Persona</legend>
+        <h4>Input tipo texto</h4>
+        <input
+          type="text"
+          placeholder="Ingrese un valor"
+          value="Pepito"
+          name="nombre"
+        />
+        <h4>Input tipo Number</h4>
+        <input type="number" placeholder="Ingrese un número" name="numero" />
+
+        <h4>Input tipo Fecha</h4>
+        <input type="date" placeholder="Ingrese un número" name="fecha" />
+
+        <h4>Input tipo hora</h4>
+        <input type="time" placeholder="Ingrese una hora" name="hora" />
+
+        <h4>Input tipo File</h4>
+        <input type="file" placeholder="Ingrese una archivo" name="archivo" />
+      </fieldset>
+      <h4>Input tipo Color</h4>
+      <input type="color" placeholder="Ingrese un color" name="color" />
+
+      <h4>Input tipo Password</h4>
+      <input
+        type="password"
+        placeholder="Ingrese su password"
+        name="password"
+      />
+
+      <h4>Input tipo Correo</h4>
+      <input type="email" placeholder="Ingrese un correo" name="correo" />
+
+      <h4>Radio Button</h4>
+      <label for="radio_1">
+        <input id="radio_1" type="radio" name="opcion_color" />Rojo
+      </label>
+      <input type="radio" name="opcion_color" />Azul
+      <input type="radio" name="opcion_color" />Verde
+
+      <h4>Checkbox</h4>
+      <input type="checkbox" name="curso" /> Matematica
+      <input type="checkbox" name="curso" /> Lenguaje
+      <input type="checkbox" name="curso" /> HTML
+      <input type="checkbox" name="curso" /> Javascript
+      <input type="checkbox" name="curso" /> CSS
+
+      <h4>Select</h4>
+      <select name="cursos_codigo">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">Javascript</option>
+        <option value="rjs">React JS</option>
+      </select>
+
+      <h4>Select Países</h4>
+      <select name="paises">
+        <option value="">Perú</option>
+        <option value="">Colombia</option>
+        <option value="">Chile</option>
+        <option value="">Mexico</option>
+      </select>
+
+      <h4>TextArea</h4>
+      <textarea
+        placeholder="Ingrese una breve descripcion sobre usted"
+        cols="100"
+        rows="5"
+      ></textarea>
+
+      <h4>Botones</h4>
+      <input type="button" value="Enviar datos" />
+      <button type="button">Enviar</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarea</title>
+  </head>
+  <body>
+    <br />
+    <form action="">
+      <table align="center">
+        <tr align="center">
+          <td colspan="2">
+            <h1>Ejemplo 1</h1>
+          </td>
+        </tr>
+        <tr align="center">
+          <td colspan="2">
+            <b>Los campos marcados con * son de inserción obligatoria</b>
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <b>Asunto</b>
+          </td>
+          <td>
+            <input type="text" name="asunto" />
+          </td>
+        </tr>
+        <tr>
+          <td align="right"><b>*</b>Primer Apellido</td>
+          <td>
+            <input type="text" name="primer_apellido" required />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">Segundo Apellido</td>
+          <td>
+            <input type="text" name="segundo_apellido" />
+          </td>
+        </tr>
+        <tr>
+          <td align="right"><b>*</b>Nombre</td>
+          <td>
+            <input type="text" name="nombres" required />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">DNI / Pasaporte / NIE</td>
+          <td>
+            <input type="text" name="nombres" />
+          </td>
+        </tr>
+        <tr>
+          <td align="right"><b>*</b>Correo Electrónico</td>
+          <td>
+            <input type="email" name="nombres" required />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">Teléfono</td>
+          <td>
+            <input type="number" name="nombres" />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">¿Sobre que?</td>
+          <td>
+            <select name="sobre_que">
+              <option value="arte">Arte</option>
+              <option value="cultura">Cultura</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td align="right">¿Que va a escribir?</td>
+          <td>
+            <select name="que_escribira">
+              <option value="fantasia">Fantasia</option>
+              <option value="tegnologia">Tegnologia</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td align="right"><b>*</b>Texto del escrito</td>
+          <td>
+            <textarea cols="20" rows="3" name="nombres" required></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <b
+              >Los datos personales facilitados son susceptibles de cesión
+              cuando ésta sea precisa por tramitar su contestación</b
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><button type="submit">Enviar</button></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
