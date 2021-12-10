@@ -53,9 +53,8 @@ header, .footer {
 .contacto h2 {
     font-weight: bold;
     color: purple;
-}
-.nosotros h2::before, .servicios h2::before {
-    content: 'I';
+    border-left: #87119A 5px solid;
+    padding-left: 10px;
 }
 .nosotros__catalogo, .servicios__catalogo {
     display: flex;

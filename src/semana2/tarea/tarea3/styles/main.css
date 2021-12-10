@@ -1,0 +1,242 @@
+/*
+GLOBAL
+*/
+body {
+    font-family: Arial;
+}
+
+.wrap {
+    width: 960px;
+    max-width: 960px;
+    margin: auto;
+    height: 100vh;
+}
+
+p {
+    color: #fff;
+
+}
+
+figure {
+    display: inline;
+}
+
+input, textarea {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Arial;
+    text-align: center;
+}
+
+section h2,
+section p {
+    margin-bottom: 30px;
+}
+
+.about-me,
+.skills,
+.portfolio,
+.clients,
+.contact {
+    padding: 40px;
+}
+
+/*
+PORTADA
+*/
+
+.portada__container {
+    position: relative;
+}
+.portada__container h1 {
+    position: absolute;
+    color: #FFF;
+    font-size: 64px;
+    font-weight: bold;
+    padding: 20px;
+    box-sizing: border-box;
+    top: 5%;
+    left: 40%;
+}
+.portada__container h2 {
+    text-align: justify;
+    position: absolute;
+    background: rgba(114, 153, 254, 0.5);
+    color: #FFF;
+    font-size: 36px;
+    padding: 20px;
+    box-sizing: border-box;
+    top: 60%;
+    left: 4%;
+}
+
+/*
+ABOUT ME
+*/
+.about-me {
+    background: #7299FE;
+}
+
+.about-me h2 {
+    color: #1D06A7;
+}
+
+.about-me p {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.about-me button {
+    border-radius: 10px;
+    border: none;
+    padding: 15px 40px;
+    color: #FFF;
+    font-weight: bold;
+    background: #D16FFF;
+}
+
+/*
+SKILL
+*/
+.skills {
+    background: #9122FF;
+}
+
+.skills h2 {
+    color: #26CC4B;
+}
+.skill__catalogo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.skill__catalogo__item {
+    width: 50%;
+}
+.skill__catalogo__item h4 {
+    padding: 0 20px;
+    color: #FFF;
+    font-size: 18px;
+}
+.skill__item {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+.skill__item__painted {
+    height: 20px;
+    width: 40%;
+    background: #57EFF9;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.skill__item__white {
+    height: 20px;
+    width: 60%;
+    background: #FFF;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*
+PORTAFOLIO
+*/
+.portfolio {
+    background: #FFD233;
+}
+
+.portfolio h2 {
+    color: #00AD84;
+}
+
+.portfolio__catalog {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.portfolio__catalog figure {
+    width: 22%;
+}
+
+.portfolio__catalog img {
+    width: 100%;
+}
+
+/*
+CLIENTES
+*/
+.clients {
+    background: #3F4E62;
+}
+
+.clients h2 {
+    color: #ADFF28;
+}
+
+.clients__catalog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clients__catalog figure {
+    width: 22%;
+}
+
+.clients__catalog img {
+    width: 100%;
+}
+
+/*
+CONTACTO
+*/
+.contact {
+    background: #1687A0;
+}
+
+.contact h2 {
+    color: #FF1B1B;
+}
+
+.contact__row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background: #233451;
+    border: none;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.contact__input {
+    padding: 0 2%;
+    width: 50%;
+}
+
+.contact__input input {
+    width: 100%;
+}
+
+.contact__text {
+    padding: 0 2%;
+    width: 100%;
+}
+
+.contact__text textarea {
+    width: 100%;
+}
