@@ -1,0 +1,101 @@
+/*
+GLOBALES
+*/
+body {
+    font-size: 16px;
+    font-family: arial;
+}
+h2 {
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+.footer,
+.header {
+    padding: 20px;
+    background: green;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.header nav ul {
+    display: flex;
+    justify-content: flex-start;
+}
+.header nav ul li {
+    margin-right: 5px;
+}
+.home,
+.portafolio,
+.contacto {
+    margin-top: 10px;
+}
+.portafolio h2,
+.home h2,
+.contacto h2{
+    margin-bottom: 15px;
+}
+.portafolio p,
+.home p,
+.contacto p{
+    font-size: 12px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.portafolio__catalogo,
+.home__catalogo {
+    display: flex;
+    justify-content: space-between;
+}
+.portafolio__catalogo__item,
+.home__catalogo_item {
+    width: 30%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 20px;
+}
+.portafolio__catalogo__item img,
+.home__catalogo__item img {
+    width: 100%;
+}
+.portafolio li {
+    font-weight: bold;
+}
+.portafolio li:nth-child(1) a{
+    color: #AE8800;
+}
+.portafolio li:nth-child(2) a{
+    color: red;
+}
+.portafolio li:nth-child(3) a{
+    color: blue;
+}
+.portafolio li:nth-child(4) a{
+    color: green;
+}
+.contacto textarea,
+.contacto input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.contacto button {
+    background: white;
+    border: 1px solid green;
+    color: green;
+    padding: 10px 20px;
+}
+
+.footer span {
+    color: white;
+    font-weight: bold;
+}

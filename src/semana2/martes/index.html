@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selectores</title>
+    <style>
+        /*
+        SELECTORES SIMPLES
+        */
+        body {
+            background: red;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background: orange;
+        }
+
+        ul li {
+            color: white;
+        }
+
+        input[type="text"] {
+            padding: 20px;
+        }
+
+        input[disabled] {
+            background: gray;
+        }
+
+        a[href="https://www.linkeding.com"] {
+            background: blueviolet;
+            color: orange;
+            border-radius: 20px;
+
+        }
+
+        a[href="https://www.google.com"] {
+            background: white;
+            color: yellow;
+            border-radius: 20px;
+        }
+
+        .box:hover {
+            background: blueviolet;
+        }
+
+        .box h2:hover {
+            color: white;
+        }
+
+        input:hover {
+            outline: none;
+            box-shadow: 0 0 10px blue;
+        }
+
+        ul.one li:first-child {
+            color: #ab1234;
+        }
+
+        ul.one li:last-child {
+            color: #ab1234;
+        }
+
+        ul.one li:nth-child(2) {
+            color: #000000;
+        }
+
+        /*
+        CAPTURA LOS ELEMENTOS PARES
+        */
+        ul.one li:nth-child(odd) {
+            background: yellowgreen;
+            padding: 5px;
+        }
+
+        /*
+        CAPTURA LOS ELEMENTOS IMPARES
+        */
+        ul.one li:nth-child(even) {
+            background: #9cd9dc;
+            padding: 5px;
+        }
+
+        /*
+        */
+        .two li:nth-child(2n+2) {
+            background: blue;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <h2>TEXTO</h2>
+</div>
+<ul class="one">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+<ul class="two">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+
+<input type="text">
+<input type="checkbox">
+<input type="password">
+<input type="text" disabled>
+
+<a href="https://www.linkeding.com">LINKEDING</a>
+<a href="https://www.google.com">GOOGLE</a>
+<a href="#">YOUTUBE</a>
+
+<style>
+    h2::after {
+        content: "''";
+    }
+    h2::before {
+        content: "''";
+    }
+    h2::first-letter {
+        font-size: 40px;
+    }
+    p::first-line {
+        background: green;
+    }
+</style>
+
+<style>
+    ul > li {
+        color: green;
+        border-top: 5px solid darkred;
+    }
+</style>
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<style>
+    h2+p {
+        background: olivedrab;
+    }
+    h2~p {
+        background: olivedrab;
+    }
+</style>
+
+<h2>TITULO</h2>
+<p>lorem</p>
+<p>lorem</p>
+<p>lorem</p>
+<h2>TITULO</h2>
+<p>lorem</p>
+<h2>TITULO</h2>
+<p>lorem</p>
+<h2>TITULO</h2>
+<p>lorem</p>
+
+</body>
+</html>

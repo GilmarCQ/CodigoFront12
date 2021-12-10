@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    .box {
+        width: 200px;
+        height: 200px;
+        background: orange;
+        position: relative;
+    }
+    .ojo-uno, .ojo-dos {
+        width: 30px;
+        height: 30px;
+        background: red;
+    }
+    .ojo-uno {
+        position: absolute;
+        right: 40px;
+        top: 40px;
+    }
+    .ojo-dos {
+        position: absolute;
+        left: 40px;
+        top: 40px;
+    }
+    .boca {
+        position: absolute;
+        width: 60px;
+        height: 30px;
+        background: red;
+        left: 70px;
+        bottom: 50px;
+    }
+    .diente {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: white;
+        left: 0;
+    }
+    .diente:nth-child(1) {
+        left: 4px;
+    }
+    .diente:nth-child(2) {
+        left: 18px;
+    }
+    .diente:nth-child(3) {
+        left: 32px;
+    }
+    .diente:nth-child(4) {
+        left: 46px;
+    }
+    .adorno {
+        position: absolute;
+        background: grey;
+        width: 80%;
+        height: 10px;
+        z-index: 1;
+        left: 10%;
+        top: 6px;
+    }
+</style>
+<div class="box">
+    <div class="ojo-uno"></div>
+    <div class="ojo-dos"></div>
+    <div class="boca"></div>
+    <div class="boca">
+        <div class="adorno"></div>
+        <div class="diente"></div>
+        <div class="diente"></div>
+        <div class="diente"></div>
+        <div class="diente"></div>
+    </div>
+</div>
+
+<style>
+    body {
+        margin: 0;
+        height: 200vh;
+    }
+    .header {
+        background: blue;
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+    }
+</style>
+<header class="header">
+    CABECERA
+</header>
+
+</body>
+</html>

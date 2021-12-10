@@ -1,0 +1,66 @@
+/*
+GLOBALES
+*/
+body {
+    font-size: 16px;
+    font-family: arial;
+}
+h2 {
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: purple;
+    font-size: 10px;
+}
+
+section {
+    padding: 40px;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background: lightskyblue;
+}
+.header nav {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+.header nav ul {
+     display: flex;
+     align-content: center;
+     align-items: center;
+ }
+.header nav ul li a {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nosotros h2, .nosotros p, .servicios h2, .servicios p {
+    margin-bottom: 20px;
+}
+.nosotros h2, .servicios h2 {
+    font-weight: bold;
+    color: purple;
+}
+.nosotros h2::before, .servicios h2::before {
+    content: 'I';
+}
+.nosotros__catalogo, .servicios__catalogo {
+    display: flex;
+    justify-content: space-around;
+}
+.nosotros figure,
+.servicios figure{
+    display: inline;
+    width: 30%;
+}
+.nosotros img,
+.servicios img {
+    width: 100%;
+}
