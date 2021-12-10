@@ -18,7 +18,7 @@ section {
     padding: 40px;
 }
 
-header {
+header, .footer {
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -95,3 +95,31 @@ header {
     border-radius: 30px;
 }
 
+/*
+CONTACTO
+*/
+.contacto__detalle {
+    margin-top: 20px;
+    display: flex;
+    /*justify-content: space-around;*/
+}
+.contacto__detalle img {
+    width: 60%;
+}
+.contacto__detalle .contacto__detalle__descripcion {
+    width: 40%;
+    padding: 20px;
+}
+.contacto__detalle__descripcion p {
+    margin-bottom: 20px;
+}
+.contacto__detalle__descripcion strong {
+    font-weight: bold;
+}
+.footer span {
+    color: white;
+    font-weight: bold;
+}
+.footer strong {
+    color: #aa11bb;
+}
