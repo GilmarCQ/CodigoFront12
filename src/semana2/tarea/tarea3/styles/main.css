@@ -6,7 +6,6 @@ body {
 }
 
 .wrap {
-    width: 960px;
     max-width: 960px;
     margin: auto;
     height: 100vh;
@@ -49,11 +48,14 @@ section p {
 /*
 PORTADA
 */
+.portada img {
+    display: block;
+}
 
-.portada__container {
+.portada {
     position: relative;
 }
-.portada__container h1 {
+.portada h1 {
     position: absolute;
     color: #FFF;
     font-size: 64px;
@@ -63,7 +65,7 @@ PORTADA
     top: 5%;
     left: 40%;
 }
-.portada__container h2 {
+.portada h2 {
     text-align: justify;
     position: absolute;
     background: rgba(114, 153, 254, 0.5);
@@ -71,7 +73,7 @@ PORTADA
     font-size: 36px;
     padding: 20px;
     box-sizing: border-box;
-    top: 60%;
+    top: 300px;
     left: 4%;
 }
 
@@ -161,6 +163,7 @@ PORTAFOLIO
     width: 60%;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 

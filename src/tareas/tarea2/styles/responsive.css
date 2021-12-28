@@ -1,0 +1,32 @@
+@media (max-width: 600px) {
+    .contact__detail__info span {
+        font-size: 1em;
+    }
+    .menu {
+        display: none;
+    }
+    .icon__responsive {
+        display: block;
+    }
+    .icon__responsive img {
+        height: 40px;
+        border: 2px solid black;
+        padding: 4px;
+        border-radius: 7px;
+    }
+}
+@media (max-width: 500px) {
+    .footer {
+        text-align: center;
+        display: block;
+    }
+    .footer span {
+        display: block;
+    }
+    .contact__detail {
+        display: block;
+    }
+    .contact__detail figure {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+body { font-family: "Roboto", sans-serif; }
+
+section {
+    padding: 40px;
+    background: linear-gradient(
+            359deg,
+            #c4d62f61,
+            transparent);
+}
+section h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #87119A;
+    padding-left: 10px;
+    border-left: 8px solid #87119A;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+a {
+    text-decoration: none;
+    color: #87119A;
+    font-size: 18px;
+}
+.catalog {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+/*@keyframes rotacion {*/
+/*    50% {*/
+/*        rotation: 90;*/
+/*    }*/
+/*}*/
+.catalog img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px 2px #605444;
+}
+.catalog img:hover {
+    transition: 1s;
+    transform: scale(1.05);
+}
+
+
+/*HEADER*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffa5368a;
+    padding: 0 40px;
+}
+
+header .logo img {
+    height: 60px;
+}
+header ul {
+    display: flex;
+}
+header li {
+    margin-right: 15px;
+    transition: 2.5s;
+}
+header li a:hover {
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #87119A;
+    transition: 0.5s;
+}
+.icon__responsive {
+    display: none;
+}
+
+/*CONTACTO*/
+.contact__detail { display: flex; }
+.contact__detail figure,
+.contact__detail .contact__detail__info{ padding: 0 20px; }
+.contact__detail img {
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+.contact__detail__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact__detail__info span {
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    line-height: 1.2em;
+}
+.contact__detail__info b {
+    font-weight: bold;
+}
+
+/*FOOTER*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    font-size: 1em;
+    background: orange;
+}
+.footer b {
+    color: #87119A;
+    font-weight: bold;
+}
