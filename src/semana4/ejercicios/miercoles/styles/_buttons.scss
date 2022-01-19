@@ -1,0 +1,24 @@
+
+.btn {
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 10px;
+  border: none;
+  width: 120px;
+  &:hover {
+    box-shadow: inset .75em 0 0 0 orange;
+  }
+}
+.btn-primary {
+  background-color: $primary-color;
+}
+.btn-success {
+  background-color: $success-color;
+}
+.btn-danger {
+  background-color: $danger-color;
+}
+.btn-warning {
+  background-color: $warning-color;
+}

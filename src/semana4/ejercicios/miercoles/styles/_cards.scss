@@ -1,0 +1,22 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+  .card {
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    overflow: hidden;
+    font-family: sans-serif;
+    img {
+      width: 100%;
+    }
+    &__body {
+      padding: 10px 20px;
+      h2 {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0;
+      }
+    }
+  }
+}
