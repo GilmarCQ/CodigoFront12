@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {
@@ -16,8 +17,10 @@
   border: none;
   width: 120px;
 }
+
 .btn:hover {
-  box-shadow: inset 0.75em 0 0 0 orange;
+  -webkit-box-shadow: inset .75em 0 0 0 orange;
+          box-shadow: inset .75em 0 0 0 orange;
 }
 
 .btn-primary {
@@ -37,9 +40,14 @@
 }
 
 .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .cards .card {
   width: 300px;
   border-radius: 10px;
@@ -47,16 +55,18 @@
   overflow: hidden;
   font-family: sans-serif;
 }
+
 .cards .card img {
   width: 100%;
 }
+
 .cards .card__body {
   padding: 10px 20px;
 }
+
 .cards .card__body h2 {
   font-size: 20px;
   font-weight: bold;
   margin: 0;
 }
-
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+body,
+ul,
+p,
+figure {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+h2 {
+    font-size: 1em;
+    font-weight: 500;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 800px;
+    margin: auto;
+}
+.col-50 {
+    padding: 5px 10px;
+    width: 50%;
+}
+.col-25 {
+    padding: 5px 10px;
+    width: 24%;
+}
+.col-100 {
+    padding: 10px;
+    width: 100%;
+}
+.center {
+    text-align: center;
+}
+.btn {
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    &:hover {
+        cursor: pointer;
+    }
+    &-success {
+        background-color: green;
+        color: #fff;
+    }
+    &-alert {
+        background-color: rgb(199, 196, 19);
+        color: #fff;
+    }
+}
+table {
+    width: 100%;
+    thead {
+        background-color: yellowgreen;
+    }
+    tr {
+        th {
+            font-size: .75em;
+            font-weight: 400;
+            padding: 5px;
+        }
+        td {
+            font-size: .65em;
+            font-weight: 300;
+            padding: 5px;
+            text-align: center;
+        }
+    }
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+.header {
+    height: 60px;
+    background-color: #ffeb3b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    display: none;
+    &>a {
+        height: 40px;
+        img {
+            height: 100%;
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+            font-size: .75em;
+            padding: 0 10px;
+        }
+    }
+}
+main {
+    // flex: 1;
+    background-color: #f1f1f1;
+    section {
+        margin: 30px 0;
+        h2 {
+            position: relative;
+            width: 200px;
+            margin: 20px auto;
+            text-align: center;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 6px;
+                background-color: #3f51b5;
+                top: 125%;
+                left: 50px;
+                border-radius: 10px;
+            }
+            &:hover::before {
+                transition: all 1s ease;
+                width: 100px;
+            }
+        }
+        .form-users-input {
+            .form {
+                display: flex;
+                flex-wrap: wrap;
+                &__row {
+                    label {
+                        display: block;
+                        font-size: .6em;
+                        margin: 0 0 5px;
+                    }
+                    input,
+                    textarea {
+                        width: 100%;
+                        border-radius: 5px;
+                        padding: 5px 10px;
+                        border: none;
+                        font-size: .75em;
+                    }
+                    button {
+                        margin-left: 5px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        .form-users-data {
+            .catalog {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                gap: 1%;
+                .card {
+                    border-radius: 25px;
+                    border: 1px solid #999;
+                    &-header {
+                        display: flex;
+                        justify-content: center;
+                        padding: 10px;
+                        & figure {
+                            width: 160px;
+                            height: 160px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            & img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                    &-body {
+                        padding: 10px;
+                        & p {
+                            font-family: sans-serif;
+                            font-size: .75em;
+                            font-weight: 400;
+                        }
+                        .about {
+                            text-align: justify;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.footer {
+    height: 40px;
+    background-color: orange;
+}

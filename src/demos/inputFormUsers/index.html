@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Input Users</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header">
+        <a href="#">
+          <img
+            src="https://www.crisol.com.pe/media/logo/stores/8/logo.png"
+            alt="Logo Institucional"
+          />
+        </a>
+        <ul>
+          <li><a href="#">Opcion 1</a></li>
+          <li><a href="#">Opcion 2</a></li>
+          <li><a href="#">Opcion 3</a></li>
+        </ul>
+      </header>
+      <main>
+        <section class="container">
+          <h2>Ingrese el Usuario</h2>
+          <div class="form-users-input">
+            <form class="form">
+              <div class="form__row col-50">
+                <label for="form-nombres">Nombre(s)</label>
+                <input
+                  required
+                  type="text"
+                  name="form-nombres"
+                  class="form-input"
+                  id="form-nombres"
+                  placeholder="Ingrese su nombre"
+                />
+              </div>
+              <div class="form__row col-50">
+                <label for="form-apellidos">Apellido(s)</label>
+                <input
+                  required
+                  type="text"
+                  name="form-apellidos"
+                  class="form-input"
+                  id="form-apellidos"
+                  placeholder="Ingrese su Apellido"
+                />
+              </div>
+              <div class="form__row col-50">
+                <label for="form-edad">Edad</label>
+                <input
+                  required
+                  type="text"
+                  name="form-edad"
+                  class="form-input"
+                  id="form-edad"
+                  placeholder="Ingrese su edad"
+                />
+              </div>
+              <div class="form__row col-50">
+                <label for="form-pais">País</label>
+                <input
+                  required
+                  type="text"
+                  name="form-pais"
+                  class="form-input"
+                  id="form-pais"
+                  placeholder="Ingrese su país"
+                />
+              </div>
+              <div class="form__row col-50">
+                <label for="form-url">Url Imagen</label>
+                <input
+                  required
+                  type="text"
+                  name="form-url"
+                  class="form-input"
+                  id="form-url"
+                  placeholder="Ingrese Url"
+                />
+              </div>
+              <div class="form__row col-50">
+                <label for="form-correo">Correo</label>
+                <input
+                  required
+                  type="text"
+                  name="form-correo"
+                  class="form-input"
+                  id="form-correo"
+                  placeholder="Ingrese su Correo"
+                />
+              </div>
+              <div class="form__row col-100">
+                <label for="form-about">Cuentanos sobre ti</label>
+                <textarea
+                  required
+                  type="text"
+                  name="form-about"
+                  class="form-input"
+                  id="form-about"
+                  placeholder="Hablanos sobre ti"
+                ></textarea>
+              </div>
+              <div class="form__row col-100 center">
+                <button type="submit" class="btn btn-success" id="btn-enviar">
+                  Agregar
+                </button>
+                <button type="reset" class="btn btn-alert" id="btn-reset">
+                  Limpiar
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <section class="container">
+          <h2>Listado de Usuarios</h2>
+          <div class="form-users-data">
+            <div class="catalog"> 
+              <!-- <div class="card col-25">
+                <div class="card-header">
+                  <figure>
+                    <img
+                      src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                      alt="Foto Usuario"
+                    />
+                  </figure>
+                </div>
+                <div class="card-body">
+                  <p>Gilmar Campana Quispe</p>
+                  <p>25 años - Perú</p>
+                  <p>gacampanaq@gmail.com</p>
+                  <p class="about">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Repellat minus facilis unde cumque totam odio aliquam alias,
+                    error voluptatum cum voluptatibus consequatur porro iste
+                    vitae dicta! Eaque dicta expedita itaque!
+                  </p>
+                  <p></p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">s</footer>
+    </div>
+
+    <script src="./js//main.js"></script>
+  </body>
+</html>

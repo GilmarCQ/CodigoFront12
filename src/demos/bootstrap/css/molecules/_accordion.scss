@@ -1,0 +1,23 @@
+.accordion {
+    .accordion_item {
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: $bg-primary;
+            color: $font-color-primary;
+            & h2 {
+                font-size: 1em;
+                font-weight: 600;
+            }
+        }
+        &__body {
+            padding: 10px 20px;
+            & p {
+                text-align: justify;
+                font-size: .75em;
+            }
+        }
+    }
+}

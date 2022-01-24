@@ -1,0 +1,101 @@
+$padding-horizontal: 50px;
+$padding-horizontal-button: 50px;
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+    height: 100vh;
+    background-color: orange;
+}
+button {
+    padding: 20px $padding-horizontal;
+}
+.container {
+    width: 1000px;
+    margin: auto;
+    padding: 20px $padding-horizontal;
+    background-color: #111;
+    height: 100%;
+    h2 {
+        margin: 0;
+        font-family: sans-serif;
+        color: #fff;
+    }
+    .buttons {
+        margin: 20px 0;
+        button {
+            background-color: transparent;
+            border: 1px solid orange;
+            color: #fff;
+            width: 200px;
+            height: 60px;
+        }
+        .efect-001 {
+            &:hover {
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+        .effect-002 {
+            //padding: 20px;
+            background: #ECECEC;
+            &-btn-001 {
+                border-radius: 50px;
+                position: relative;
+                border: none;
+                &::before {
+                    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                    content: '';
+                    position: absolute;
+                    width: 0%;
+                    height: 100%;
+                    border-radius: 50px;
+                    background-color: #00F0B5;
+                    top: 0;
+                    left: 0;
+                }
+                & span {
+                    color: #509180;
+                    mix-blend-mode: difference;
+                }
+                &:hover {
+                    &::before {
+                        width: 100%;
+                        // color: #000;
+                        background-color: #00F0B5;
+                    }
+                }
+            }
+            &-btn-002 {
+                margin: 20px auto;
+                // border: none;
+                padding: 10px 44px;
+                font-size: 1em;
+                position: relative;
+                &::before {
+                    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                    content: '';
+                    width: 0%;
+                    height: 100%;
+                    background: orange;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                & span {
+                    color: #fff;
+                    mix-blend-mode: difference;
+                }
+                &:hover {
+                    &::before {
+                        background: orange;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+

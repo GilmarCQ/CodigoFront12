@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+ul {
+    padding: 0;
+}
+.container {
+    width: 1000px;
+    margin: auto;
+}
+.wrap {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+header {
+    background-color: rgb(255, 255, 38);
+}
+header .nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+}
+header nav>a {
+    height: 40px;
+}
+header nav>a img{
+    height: 100%;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul li a {
+    padding: 0 10px;
+    color: #000;
+    font-weight: bold;
+}
+header nav button {
+    display: none;
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #666;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+main {
+    background-color: rgb(63 81 181);
+    flex: 1;
+}
+.footer {
+    background-color: rgb(255, 72, 0);
+    height: 50px;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    header {
+        z-index: 10;
+    }
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+        /* display: none; */
+        background-color: rgb(255, 255, 38);
+        transition: all .5s ease;
+        transform: translateX(-600px);
+        opacity: 0;
+    }
+    .menu.is-active {
+        /* display: flex; */
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    .menu li {
+        padding: 5px 0;
+        border-top: 1px solid #999;
+    }
+    .menu li:hover {
+        background-color: rgb(214, 236, 15);
+    }
+    .menu li:hover a {
+        color: #000;
+    }
+    header nav button {
+        display: block;
+    }
+    header nav button.active {
+        box-shadow: 0px 0px 10px black;
+        border: none;
+    }
+}
