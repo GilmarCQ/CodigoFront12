@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./css//main.css" />
+    <title>CRUD Users API</title>
+  </head>
+  <body>
+    <div class="container">
+      <h4 class="center-align">Datos del Usuario</h4>
+      <div class="divider"></div>
+      <form>
+        <div class="row">
+          <div class="input-field col s12 m6 l4">
+            <input type="text" class="validate" id="name" required />
+            <label for="name">Nombres</label>
+          </div>
+          <div class="input-field col s12 m6 l4">
+            <input type="text" class="validate" id="lastname" required />
+            <label for="lastname">Apellidos</label>
+          </div>
+          <div class="input-field col s12 m6 l4">
+            <input type="text" class="validate" id="country" required />
+            <label for="country">País</label>
+          </div>
+          <div class="input-field col s12 m6 l4">
+            <input type="email" class="validate" id="mail" required />
+            <label for="mail">Correo</label>
+          </div>
+          <div class="input-field col s12 m12 l8">
+            <input type="text" class="validate" id="photo" required />
+            <label for="photo">Url de Foto</label>
+          </div>
+          <div class="input-field col s12 m12 l12">
+            <textarea
+              class="validate materialize-textarea"
+              id="description"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+            <label for="description">Descripcion</label>
+          </div>
+        </div>
+        <div class="row">
+          <button
+            class="btn waves-effect hoverable col s12 offset-m1 m4 offset-l1 l4"
+            id="btn-add"
+          >
+            Agregar
+          </button>
+          <button
+            class="btn waves-effect hoverable col s12 offset-m1 m4 offset-l1 l4"
+            id="btn-clean"
+          >
+            Limpiar
+          </button>
+        </div>
+      </form>
+      <div class="row" id="list-users">
+        <!-- <div class="col s12 m4 l4 xl3">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img
+                class="circle"
+                src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=200"
+                alt=""
+              />
+            </div>
+            <div class="divider"></div>
+            <div class="card-content">
+              <p>Gilmar Campana Quispe</p>
+              <p class="truncate">gacampanaq@gmail.com</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

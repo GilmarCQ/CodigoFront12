@@ -11,7 +11,8 @@ const btnAgregar = formUser.querySelector('#btn-enviar');
 const btnReset = formUser.querySelector('#btn-reset');
 // const tbody = document.querySelector('.form-users-data').querySelector('table').querySelector('tbody');
 
-const users = [];
+let users = [];
+const URL_API = 'https://61ef3de0d593d20017dbb3c1.mockapi.io';
 
 
 const resetDataForm = () => {
@@ -21,17 +22,24 @@ const resetDataForm = () => {
     telefono.value = '';
 }
 const getDataForm = () => {
-    const user = {
-        'nombres': nombres.value,
-        'apellidos': apellidos.value,
-        'correo': correo.value,
-        'pais': pais.value,
-        'edad': edad.value,
-        'url': url.value,
-        'about': about.value
+    // const user = {
+    //     'nombres': nombres.value,
+    //     'apellidos': apellidos.value,
+    //     'correo': correo.value,
+    //     'pais': pais.value,
+    //     'edad': edad.value,
+    //     'url': url.value,
+    //     'about': about.value
+    // };
+    // users.push(user);
+    return {
+        name: nombres.value,
+        lastname: apellidos.value,
+        mail: correo.value,
+        photo: url.value,
+        country: pais.value,
+        description: about.value
     };
-    users.push(user);
-    return user;
 }
 const addCard = (user) => {
     const nodeCard = document.createElement('div');
@@ -41,7 +49,7 @@ const addCard = (user) => {
     nodeCardHeader.classList.add('card-header');
     const nodeFigure = document.createElement('figure');
     const nodeImg = document.createElement('img');
-    nodeImg.src = user.url;
+    nodeImg.src = user.photo;
     nodeFigure.appendChild(nodeImg);
     nodeCardHeader.appendChild(nodeFigure);
     nodeCard.appendChild(nodeCardHeader);
@@ -49,14 +57,14 @@ const addCard = (user) => {
     const nodeCardBody = document.createElement('div');
     nodeCardBody.classList.add('card-body');
     const nodePNombres = document.createElement('p');
-    nodePNombres.innerText = `${user.nombres} ${user.apellidos}`;
+    nodePNombres.innerText = `${user.name} ${user.lastname}`;
     const nodePPaisEdad = document.createElement('p');
-    nodePPaisEdad.innerText = `${user.edad} ${user.pais}`;
+    nodePPaisEdad.innerText = `${user.country}`;
     const nodePCorreo = document.createElement('p');
-    nodePCorreo.innerText = `${user.correo}`;
+    nodePCorreo.innerText = `${user.mail}`;
     const nodePAbout = document.createElement('p');
     nodePAbout.classList.add('about');
-    nodePAbout.innerText = `${user.about}`;
+    nodePAbout.innerText = `${user.description}`;
     nodeCardBody.appendChild(nodePNombres);
     nodeCardBody.appendChild(nodePPaisEdad);
     nodeCardBody.appendChild(nodePCorreo);
@@ -78,11 +86,54 @@ const addCard = (user) => {
 //     tbody.appendChild(nodeTr);
 // }
 
+const saveUser = (user, callback) => {
+    fetch(`${URL_API}/users`, {
+        method: 'POST',
+        body: JSON.stringify(user),
+        headers: {'Content-Type': 'application/json;charset=UTF-8'}
+    })
+    .then(res => {
+        return res.json();
+    })
+    .then(res => {
+        callback(res);
+    })
+    .catch(e => {
+        console.log('error', e);
+    }) 
+}
+const getUsers = (callback) => {
+    fetch(`${URL_API}/users`, {
+        method: 'GET',
+        headers: {'Content-Type': 'application/json;charset=UTF-8'}
+    })
+    .then(res => {
+        return res.json();
+    })
+    .then(users => {
+        callback(users);
+    })
+    .catch(e => {
+        console.log('error', e);
+    }) 
+}
 function addUser(e) {
     e.preventDefault();
-    const user = getDataForm();
-    addCard(user);
+    // const user = getDataForm();
+    // addCard(user);
+    saveUser(getDataForm(), function(response) {
+        console.log('Usuario Agregado');
+    });
 }
+getUsers((usersApi) => {
+    users = usersApi;
+    console.log('GET USERS');
+    console.log(users);
+    users.forEach(user => {
+        addCard(user);
+    });
+});
+
 
 formUser.addEventListener('submit', addUser);
 formUser.addEventListener('reset', resetDataForm);

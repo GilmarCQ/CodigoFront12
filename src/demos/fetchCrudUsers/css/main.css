@@ -1,0 +1,21 @@
+.card-image {
+  text-align: center;
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
+.card-image img {
+  width: 200px !important;
+  height: 200px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50% !important;
+}
+/*# sourceMappingURL=main.css.map */
