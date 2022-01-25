@@ -1,3 +1,7 @@
+.card-content {
+  min-height: 200px;
+}
+
 .card-image {
   text-align: center;
   width: auto;
@@ -17,5 +21,15 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50% !important;
+}
+
+.mt-4 {
+  margin-top: 4em;
+}
+
+#toast-container {
+  top: 10% !important;
+  right: auto !important;
+  left: 40%;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,4 +1,7 @@
 .card {
+    &-content {
+        min-height: 200px;
+    }
     &-image {
         text-align: center;
         width: auto;
@@ -14,4 +17,13 @@
             // width: 100%;
         }
     }
+}
+.mt-4 {
+    margin-top: 4em;
+}
+#toast-container {
+    top: 10% !important;
+    right: auto !important;
+
+    left: 40%;
 }
